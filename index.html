@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Knewave|Sonsie+One|Vibur" rel="stylesheet"> 
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -20,7 +21,29 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>feuille ciseau pierre</h1>
+        <header class="center">
+          <h1 class="titre">FEUILLE/PIERRE/CISEAUX</h1>  
+        </header><!-- /header -->
+        <section class="name center">
+         <p class="texte">Enter votre nom:</p>
+        <input type="text" name="name" id="name" value="" placeholder="Nom">
+            
+        </section>
+        
+        <section class="jeux center">
+            <button class="btjouer" onclick="jouer()"><img src="img/play.png"  class="imgjouer" alt="jouer"></button>
+        </section>
+        <section class="center choixuti">
+             <button class="btchoix"><img  class="choix" src="img/ciseau.jpg" alt="ciseau"></button>
+            <button class="btchoix"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
+            <button class="btchoix"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
+        </section>
+
+
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
