@@ -187,13 +187,20 @@ input[type="text"]
 .z-indexc
 {
     
-    transform: translate(50px, 100px);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    
 }
 .z-indexO
 {
-    
-    transform: translate(-25%, -200%);
+  transform: matrix(1, -0.3, 0, 1, 0, 0);  
+     
 }
+#nomgagniant
+{
+
+    padding-top: 50px;
+}
+
 
 
 

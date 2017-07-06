@@ -31,6 +31,8 @@
             <button class="btjouer" onclick="jouer()"><img src="img/play.png"  class="imgjouer" alt="jouer"></button>
 
         </section>
+
+        
         <section class="center nom">
             <p>Entrer votre nom:</p>
             <input id="name" type="text" onkeyup="saisinom()">
@@ -45,17 +47,31 @@
             <button class="btchoix"  id="feuille" onclick="choixClick(this)"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
             <button class="btchoix" id="pierre" onclick="choixClick(this)"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
         </section>
-        <section class="score">
-         
-         <p class= "texte"> le score de l'oridnateur est: <strong id="scoreord"></strong></p>
+         <section class="inlgnechoix" >
+            <!-- <div id="choixuimg">
+                
+            </div>
+            <div id="choixordimg">
+                
+            </div> -->
+        </section>
+        <section id="nomgagniant" class="center">
+          <p id="ganiant">  </p>
             
         </section>
 
+        
+
         <section class="choixordi center">
-             <p class="texte">L'ordinateur à choisi:</p>
+             <p class="texte"> score ordinateur :<strong id="scorord"></strong></p>
             <img  class="choixo" src="img/ciseau.jpg" alt="ciseau">
             <img class="choixo" src="img/feuille.jpg" alt="feuille">
             <img class="choixo" src="img/pierre.jpg" alt="pierre">
+        </section>
+        <section class="score center">
+         
+         <p class= "texte"> le score de l'oridnateur est: <strong id="scoreord"></strong></p>
+            
         </section>
         
 
