@@ -1,4 +1,23 @@
-// function jeux(){
+// 
+     function jouer()
+     {
+       var nom=prompt("Enter votre nom");
+       document.getElementById("joueurname").innerHTML=nom;
+     }
+    jouer();
+    
+    function choixClick()
+    {
+       var choixut=this.attr(id);
+       alert(choixut);
+     }
+
+   // function jeux(){
+
+
+          
+
+
 //         var p1=0;
 //        var p2=0;
 //         var t=["feuille","ciseau","pierre"];

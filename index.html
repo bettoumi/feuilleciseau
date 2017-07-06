@@ -22,22 +22,35 @@
 
         <!-- Add your site or application content here -->
         <header class="center">
-          <h1 class="titre">FEUILLE/PIERRE/CISEAUX</h1>  
+          <h1 class="titre">FEUILLE/PIERRE/CISEAU</h1>  
         </header><!-- /header -->
-        <section class="name center">
-         <p class="texte">Enter votre nom:</p>
-        <input type="text" name="name" id="name" value="" placeholder="Nom">
-            
-        </section>
+        
         
         <section class="jeux center">
             <button class="btjouer" onclick="jouer()"><img src="img/play.png"  class="imgjouer" alt="jouer"></button>
         </section>
-        <section class="center choixuti">
-             <button class="btchoix"><img  class="choix" src="img/ciseau.jpg" alt="ciseau"></button>
-            <button class="btchoix"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
-            <button class="btchoix"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
+        <section class="center texte joueur">
+         <p><strong id="joueurname" ></strong>   :est entrain de jouer</p>
+         <p>Ton score  est :<strong id="scorej"></strong></p>
         </section>
+        <section class="center choixuti">
+             <button class="btchoix" id="ciseau" onclick="choixClick(this)"><img class="choix" src="img/ciseau.jpg" alt="ciseau"></button>
+            <button class="btchoix"  id="feuille" onclick="choixClick(this.id)"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
+            <button class="btchoix" id="pierre" onclick="choixClick(this.id)"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
+        </section>
+        <section class="score">
+         
+         <p class= "texte"> le score de l'oridnateur est: <strong id="scoreord"></strong></p>
+            
+        </section>
+
+        <section class="choixordi center">
+             <p class="texte">L'ordinateur à choisi:</p>
+            <img  class="choixo" src="img/ciseau.jpg" alt="ciseau">
+            <img class="choixo" src="img/feuille.jpg" alt="feuille">
+            <img class="choixo" src="img/pierre.jpg" alt="pierre">
+        </section>
+        
 
 
 
