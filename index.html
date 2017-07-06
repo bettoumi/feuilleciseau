@@ -27,7 +27,14 @@
         
         
         <section class="jeux center">
+
             <button class="btjouer" onclick="jouer()"><img src="img/play.png"  class="imgjouer" alt="jouer"></button>
+
+        </section>
+        <section class="center nom">
+            <p>Entrer votre nom:</p>
+            <input id="name" type="text" onkeyup="saisinom()">
+            
         </section>
         <section class="center texte joueur">
          <p><strong id="joueurname" ></strong>   :est entrain de jouer</p>
@@ -35,8 +42,8 @@
         </section>
         <section class="center choixuti">
              <button class="btchoix" id="ciseau" onclick="choixClick(this)"><img class="choix" src="img/ciseau.jpg" alt="ciseau"></button>
-            <button class="btchoix"  id="feuille" onclick="choixClick(this.id)"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
-            <button class="btchoix" id="pierre" onclick="choixClick(this.id)"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
+            <button class="btchoix"  id="feuille" onclick="choixClick(this)"><img class="choix" src="img/feuille.jpg" alt="feuille"></button>
+            <button class="btchoix" id="pierre" onclick="choixClick(this)"><img class="choix" src="img/pierre.jpg" alt="pierre"></button>
         </section>
         <section class="score">
          

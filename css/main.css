@@ -143,7 +143,7 @@ body
 {
     padding-top: 50px;
 }
-input[placeholder]
+input[type="text"]
 {
     color: black;
     opacity: 0.8;
@@ -182,8 +182,19 @@ input[placeholder]
 }
 .score
 {
-    padding-top: 50px;
+    padding-top: 100px;
 }
+.z-indexc
+{
+    
+    transform: translate(50px, 100px);
+}
+.z-indexO
+{
+    
+    transform: translate(-25%, -200%);
+}
+
 
 
 

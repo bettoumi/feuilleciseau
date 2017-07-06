@@ -1,40 +1,55 @@
-// 
-     function jouer()
-     {
-       var nom=prompt("Enter votre nom");
-       document.getElementById("joueurname").innerHTML=nom;
+
+     
+    // var input = document.getElementById("name");
+     var p = document.getElementById("joueurname");
+      p.innerHTML="";
+      var x = document.getElementById("name");
+     x.value = "";
+
+   // input.onkeydown = function(){
+   //  value = this.value;
+   //  p.innerHTML = value;
+   //  }
+   function saisinom() {
+        var x = document.getElementById("name");
+       x.value = x.value.toUpperCase();
+       p.innerHTML = x.value;
      }
-    jouer();
+
+
+
+        var p1=0;
+          var p2=0;
+        var t=document.getElementsByClassName("choixo");
+      
     
-    function choixClick()
-    {
-       var choixut=this.attr(id);
-       alert(choixut);
-     }
-
-   // function jeux(){
-
-
-          
-
-
-//         var p1=0;
-//        var p2=0;
-//         var t=["feuille","ciseau","pierre"];
-//        while((p1<3)&&(p2<3))
-//         {
-//          var choixsut=prompt('entrer votre choix');
-//          var choixord=t[Math.floor(Math.random()*3)];
-//          console.log("l'odinateur a choisi:  "+choixord);
-//          (((choixsut==="pierre")&&(choixord==="ciseau"))|| ((choixsut==="feuille")&&(choixord==="pierre"))||((choixsut==="ciseau")&&(choixord==="feuille")))? p1+=1 :
+        var choixut;
+        function choixClick(but)
+         {
            
-//           (((choixord==="pierre")&&(choixsut==="ciseau"))|| ((choixord==="feuille")&&(choixsut==="pierre"))||((choixord==="ciseau")&&(choixsut==="feuille")))? p2+=1 : console.log("egalite");
-
-//         console.log("le score de l'ordinateur est: "+ p2 + " le score de sahbia est: " + p1 );
-
-//         }   
+             
+            choixut =but.id;
            
-//         (p1>p2)? console.log("sahbia est ganiante"): console.log("l'ordinateur est ganiant");
-
-//       }
-//      jeux();
+               but.classList.add("z-indexc");
+                              
+              var choixord=t[Math.floor(Math.random()*3)]
+             // alert(choixord.alt);
+           
+             choixord.classList.add("z-indexO");
+         
+             if(((choixut==="pierre")&&(choixord.alt==="ciseau"))|| ((choixut==="feuille")&&(choixord.alt==="pierre"))||((choixut==="ciseau")&&(choixord.alt==="feuille")))
+             { p1+=1 ;}
+           else if(((choixord.alt==="pierre")&&(choixut==="ciseau"))|| ((choixord.alt==="feuille")&&(choixut==="pierre"))||((choixord.alt==="ciseau")&&(choixut==="feuille"))){p2+=1;} 
+           document.getElementById("scorej").innerHTML=p1;
+           document.getElementById("scoreord").innerHTML=p2;
+           if(p1>=3||p2>=3)
+           {
+             alert("fin de jeux");
+           }
+         }
+        
+  
+           
+      
+      
+     
