@@ -51,13 +51,15 @@ function choixClick(but) {
          if(p1>=3||p2>=3){
               if((p1==3)&&(p2<33)) 
                 {document.getElementById("ganiant").innerHTML="WOAH "+ p.innerHTML +" A GANIER";
-                    jouer() ;  }
+                   
+                  setTimeout(jouer(), 9000);
+                      }
               else if( (p2==3)&&(p1<3))
                {document.getElementById("ganiant").innerHTML="L'ORDINATEUR A GANIER";
 
-                 jouer();}
+                 setTimeout(jouer(), 9000);}
                 else if((p1==3)&&(p2==3)){document.getElementById("ganiant").innerHTML="EGALITEE";
-               jouer();
+               setTimeout(jouer(), 9000);
 
                }}
 
