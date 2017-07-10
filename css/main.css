@@ -200,6 +200,9 @@ input[type="text"]
      transform: translateY(-30px);
      
 }
+.no-cursor {
+    cursor:none;
+}
 .returno
 {
     transform:translateY(20px);

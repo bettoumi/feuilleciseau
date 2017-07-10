@@ -39,6 +39,10 @@ function choixClick(but) {
         var o=t[Math.floor(Math.random()*3)];
          but.classList.add("z-indexc");
         o.classList.add("z-indexO");
+        setTimeout(function(){but.classList.add("no-cursor")},4000);
+           //o.classList.remove("z-indexo");
+           //setTimeout(function(){o.classList.add("z-indexO")},2000);
+
 
        if(((u==="pierre")&&(o.alt==="ciseau"))||
         ((u==="feuille")&&(o.alt==="pierre"))||
@@ -58,14 +62,14 @@ function choixClick(but) {
               if((p1==3)&&(p2<33)) 
                 {document.getElementById("ganiant").innerHTML="WOAH "+ p.innerHTML +" A GANIER";
                    
-                  setTimeout(function(){jouer()}, 5000);
+                  setTimeout(function(){jouer()}, 8000);
                       }
               else if( (p2==3)&&(p1<3))
                {document.getElementById("ganiant").innerHTML="L'ORDINATEUR A GANIER";
 
-                setTimeout(function(){jouer()}, 5000);}
+                setTimeout(function(){jouer()}, 8000);}
                 else if((p1==3)&&(p2==3)){document.getElementById("ganiant").innerHTML="EGALITEE";
-               setTimeout(function(){jouer()}, 5000);
+               setTimeout(function(){jouer()}, 8000);
 
                }}
 
